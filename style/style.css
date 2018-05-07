@@ -105,7 +105,7 @@ nav li:hover span {
 }
 
 .content-wrapper {
-  width: 56%;
+  width: 980px;
   max-width: 940px;
   margin: 0 auto;
   display: flex;
@@ -333,8 +333,14 @@ main .author::before {
   background-size: 20px 20px;
   cursor: pointer;
 }
-  
+
 @media screen and (max-width: 968px) {
+  .content-wrapper {
+    width: 95%;
+  }
+}
+  
+@media screen and (max-width: 840px) {
   .sidebar .about, .sidebar .info {
     display: none;
   }
@@ -357,11 +363,12 @@ main .author::before {
   .main {
     width: 100%;
   }
+  
   .main .social {
     flex-direction: column;
     width: auto;
     position: relative;
-    bottom: 228px;
+    margin-bottom: 60%;
   }
 
   .main > section {
