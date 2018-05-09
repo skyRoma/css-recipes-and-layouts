@@ -59,6 +59,10 @@ nav {
   justify-content: space-between;
 }
 
+nav span {
+  cursor: pointer;
+}
+
 .wrapper-for-mobile {
   height: 100%;
   width: 100%;
@@ -484,7 +488,6 @@ main .author::before {
 
   nav  span {
     margin-left: 1%;
-    cursor: pointer;
   }
 
   .main figcaption h2 {
