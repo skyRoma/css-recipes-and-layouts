@@ -484,6 +484,7 @@ main .author::before {
 
   nav  span {
     margin-left: 1%;
+    cursor: pointer;
   }
 
   .main figcaption h2 {
@@ -500,7 +501,23 @@ main .author::before {
   }
 
   .main .creating {
-    width: 90%;
+    width: 80%;
+    position: relative;
+    top: 20%;
+    margin-left: 0;
+  }
+
+  .data {
+    justify-content: flex-start;
+  }
+
+  .author {
+    justify-content: flex-end;
+  }
+
+  .main p {
+    height: 200px;
+    overflow: hidden;
   }
 
   .main .social {
@@ -508,6 +525,7 @@ main .author::before {
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 0;
+    top: 185px;
   }
 
   .social > span {
@@ -517,6 +535,13 @@ main .author::before {
 
 
 @media screen and (max-width: 430px) {
+  .main section ~ section {
+    margin-top: 60px;
+  }
+
+  .main .social {
+    top: 243px;
+  }
 
   .header {
     height: 70px;
@@ -535,6 +560,10 @@ main .author::before {
   
   nav .about, nav .info, nav .tags {
     width: 20px;
+  }
+
+  .loader {
+    margin: 15%;
   }
 
 }
