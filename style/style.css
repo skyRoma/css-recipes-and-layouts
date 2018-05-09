@@ -59,6 +59,12 @@ nav {
   justify-content: space-between;
 }
 
+.wrapper-for-mobile {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
 nav .about, nav .info, nav .tags, nav .menu {
   align-items: center;
   justify-content: center;
@@ -472,11 +478,11 @@ main .author::before {
 
   nav .menu {
     display: flex;
-    background: repeating-linear-gradient( #7b7f9600, #cbccd200 10px, #7ba7d9 3px, #7ba7d9 13px);
-    margin-left: 57%;
+    background-color: rgb(103, 148, 183);
+    color: rgb(124, 167, 217);
   }
 
-  nav > span {
+  nav  span {
     margin-left: 1%;
   }
 
@@ -493,9 +499,19 @@ main .author::before {
     flex-direction: column;
   }
 
+  .main .creating {
+    width: 90%;
+  }
+
   .main .social {
+    width: 80%;
     flex-direction: row;
+    justify-content: space-between;
     margin-bottom: 0;
+  }
+
+  .social > span {
+    margin-left: 0;
   }
 }
 
